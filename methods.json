@@ -1,0 +1,30 @@
+{
+  "Awake":{
+    "description": "Unity calls Awake when an enabled script instance is being loaded.",
+    "category": "Lifecycle",
+    "url": "https://docs.unity3d.com/ScriptReference/MonoBehaviour.Awake.html"
+  },
+  "Start": {
+    "description": "Called before the first frame update.",
+    "category": "Lifecycle",
+    "example": "void Start() {\n    // Init\n}",
+    "url": "https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html"
+  },
+  "Update": {
+    "description": "Called once per frame.",
+    "category": "Lifecycle",
+    "example": "void Update() {\n    // Frame logic\n}",
+    "url": "https://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html"
+  },
+    "FixedUpdate":{
+    "description": "Frame-rate independent MonoBehaviour.FixedUpdate message for physics calculations.",
+    "category": "Lifecycle",
+    "url": "https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html"
+  },
+  "OnCollisionEnter": {
+    "description": "Called on collision.",
+    "category": "Physics",
+    "example": "void OnCollisionEnter(Collision collision) {\n    Debug.Log(collision.gameObject.name);\n}",
+    "url": "https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnCollisionEnter.html"
+  }
+}

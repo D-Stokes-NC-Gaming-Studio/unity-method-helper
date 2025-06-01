@@ -1,0 +1,74 @@
+{
+  "name": "unity-method-helper",
+  "displayName": "Unity Method Helper",
+  "description": "Unity Method Helper is a powerful productivity extension for Unity 6 developers working in Visual Studio Code.",
+  "publisher": "D-Stokes NC Gaming Studio",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "main": "./out/extension.js",
+  "categories": [
+    "Other"
+  ],
+"activationEvents": [
+    "onLanguage:csharp",
+    "onCommand:unityMethods.insertSnippet",
+    "onCommand:unityMethods.showAll",
+    "onCommand:unityMethods.validateUnityData",
+    "onCommand:unityMethods.generateMethodSnippet",
+    "onCommand:unityMethods.exportToBoilerplate"
+  ],
+  "contributes": {
+    "commands": [
+      { "command": "unityMethods.insertSnippet", "title": "Unity: Insert Snippet by Category" },
+      { "command": "unityMethods.showAll", "title": "Unity: Show All Methods" },
+      { "command": "unityMethods.validateUnityData", "title": "Unity: Validate Method Data" },
+      { "command": "unityMethods.generateMethodSnippet", "title": "Unity: Create Custom Method Snippet" },
+      { "command": "unityMethods.exportToBoilerplate", "title": "Unity: Export Selected Methods to .cs" }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "unityMethods",
+          "title": "Unity",
+          "icon": "media/unity-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "unityMethods": [
+        {
+          "id": "unityMethodTree",
+          "name": "Unity Methods"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "unityMethods.insertSnippet",
+        "key": "ctrl+alt+u",
+        "when": "editorTextFocus && editorLangId == csharp"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.100.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
