@@ -15,7 +15,7 @@ let diagnosticsCollection: vscode.DiagnosticCollection;
 /** Returns a themed icon based on the category */
 function getCategoryIcon(category: string): string {
   switch (category.toLowerCase()) {
-    case 'lifecycle': return '🔄';
+    case 'MonoBehaviour': return '🔄';
     case 'physics': return '⚙️';
     case 'animation': return '🎞️';
     case 'ui': return '🖥️';

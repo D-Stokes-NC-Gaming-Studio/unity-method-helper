@@ -1,24 +1,26 @@
 {
   "Awake":{
     "description": "Unity calls Awake when an enabled script instance is being loaded.",
-    "category": "Lifecycle",
+    "category": "MonoBehaviour",
+    "example": "void Awake() {\n    // Init\n}",
     "url": "https://docs.unity3d.com/ScriptReference/MonoBehaviour.Awake.html"
   },
   "Start": {
     "description": "Called before the first frame update.",
-    "category": "Lifecycle",
+    "category": "MonoBehaviour",
     "example": "void Start() {\n    // Init\n}",
     "url": "https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html"
   },
   "Update": {
     "description": "Called once per frame.",
-    "category": "Lifecycle",
+    "category": "MonoBehaviour",
     "example": "void Update() {\n    // Frame logic\n}",
     "url": "https://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html"
   },
     "FixedUpdate":{
     "description": "Frame-rate independent MonoBehaviour.FixedUpdate message for physics calculations.",
-    "category": "Lifecycle",
+    "category": "MonoBehaviour",
+    "example": "void FixedUpdate() {\n    // Init\n}",
     "url": "https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html"
   },
   "OnCollisionEnter": {

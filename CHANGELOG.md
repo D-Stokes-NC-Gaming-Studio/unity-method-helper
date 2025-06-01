@@ -1,9 +1,19 @@
-# Change Log
+# Changelog
 
-All notable changes to the "unity-method-helper" extension will be documented in this file.
+All notable changes to this project will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+---
 
-## [Unreleased]
+## [0.0.1] – 2025-06-01
 
-- Initial release
+### Added
+- Unity method auto-completion for MonoBehaviour lifecycle methods
+- Hover tooltips with links to Unity documentation
+- Sidebar view with method categories and snippets
+- Command Palette commands:
+  - Insert method by category
+  - Validate method data
+  - Export selected methods to `.cs`
+  - Generate custom snippets
+- Keyboard shortcut: `Ctrl+Alt+U`
+- Real-time method detection using diagnostics
