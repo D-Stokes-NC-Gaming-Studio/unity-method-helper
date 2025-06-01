@@ -2,7 +2,7 @@
   "name": "unity-method-helper",
   "displayName": "Unity Method Helper",
   "description": "Unity Method Helper is a powerful productivity extension for Unity 6 developers working in Visual Studio Code.",
-  "publisher": "D-Stokes-NC-Gaming-Studio",
+  "publisher": "D-StokesNCGamingStudio",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.100.0"
