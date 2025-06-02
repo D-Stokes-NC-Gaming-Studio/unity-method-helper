@@ -3,13 +3,17 @@
   "displayName": "Unity Method Helper",
   "description": "Unity Method Helper is a powerful productivity extension for Unity 6 developers working in Visual Studio Code.",
   "publisher": "D-StokesNCGamingStudio",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.100.0"
   },
   "main": "./out/extension.js",
   "icon": "media/unity-icon.png",
-  "categories": ["Programming Languages", "Snippets", "Other"],
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Other"
+  ],
   "preview": true,
   "repository": {
     "type": "git",
@@ -19,7 +23,7 @@
     "url": "https://github.com/D-Stokes-NC-Gaming-Studio/unity-method-helper/issues",
     "email": "dstokesncstudio@gmail.com"
   },
-"activationEvents": [
+  "activationEvents": [
     "onLanguage:csharp",
     "onCommand:unityMethods.insertSnippet",
     "onCommand:unityMethods.showAll",
@@ -29,12 +33,41 @@
   ],
   "contributes": {
     "commands": [
-      { "command": "unityMethods.insertSnippet", "title": "Unity: Insert Snippet by Category" },
-      { "command": "unityMethods.showAll", "title": "Unity: Show All Methods" },
-      { "command": "unityMethods.validateUnityData", "title": "Unity: Validate Method Data" },
-      { "command": "unityMethods.generateMethodSnippet", "title": "Unity: Create Custom Method Snippet" },
-      { "command": "unityMethods.exportToBoilerplate", "title": "Unity: Export Selected Methods to .cs" }
+      {
+        "command": "unityMethods.insertSnippet",
+        "title": "Unity: Insert Snippet by Category"
+      },
+      {
+        "command": "unityMethods.showAll",
+        "title": "Unity: Show All Methods"
+      },
+      {
+        "command": "unityMethods.validateUnityData",
+        "title": "Unity: Validate Method Data"
+      },
+      {
+        "command": "unityMethods.generateMethodSnippet",
+        "title": "Unity: Create Custom Method Snippet"
+      },
+      {
+        "command": "unityMethods.exportToBoilerplate",
+        "title": "Unity: Export Selected Methods to .cs"
+      },
+      {
+        "command": "unityMethodHelper.searchMethod",
+        "title": "Search Unity Methods",
+        "category": "Unity Method Helper"
+      }
     ],
+    "configuration": {
+      "properties": {
+        "unityMethodHelper.autoSync": {
+          "type": "boolean",
+          "default": true,
+          "description": "Auto-sync method.json from GitHub at startup."
+        }
+      }
+    },
     "viewsContainers": {
       "activitybar": [
         {
